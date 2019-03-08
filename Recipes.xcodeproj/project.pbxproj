@@ -23,8 +23,6 @@
 		4295B720222EF9710079E4EC /* RecipeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4295B71F222EF9710079E4EC /* RecipeDetailViewController.swift */; };
 		4295B725222EFAEA0079E4EC /* UIViewController+Storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4295B724222EFAEA0079E4EC /* UIViewController+Storyboards.swift */; };
 		4295B727222EFDA50079E4EC /* UIStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4295B726222EFDA50079E4EC /* UIStoryboard.swift */; };
-		4295B729222F11040079E4EC /* Placeholder.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4295B728222F11040079E4EC /* Placeholder.storyboard */; };
-		4295B72B222F11110079E4EC /* PlaceholderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4295B72A222F11110079E4EC /* PlaceholderViewController.swift */; };
 		4295B72D222F17BB0079E4EC /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4295B72C222F17BB0079E4EC /* NavigationController.swift */; };
 		4295B72F223010190079E4EC /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4295B72E223010190079E4EC /* UIView.swift */; };
 		4295B73222305E560079E4EC /* HelveticaNeue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4295B73122305E560079E4EC /* HelveticaNeue.swift */; };
@@ -72,8 +70,6 @@
 		4295B71F222EF9710079E4EC /* RecipeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailViewController.swift; sourceTree = "<group>"; };
 		4295B724222EFAEA0079E4EC /* UIViewController+Storyboards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Storyboards.swift"; sourceTree = "<group>"; };
 		4295B726222EFDA50079E4EC /* UIStoryboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStoryboard.swift; sourceTree = "<group>"; };
-		4295B728222F11040079E4EC /* Placeholder.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Placeholder.storyboard; sourceTree = "<group>"; };
-		4295B72A222F11110079E4EC /* PlaceholderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderViewController.swift; sourceTree = "<group>"; };
 		4295B72C222F17BB0079E4EC /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		4295B72E223010190079E4EC /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		4295B73122305E560079E4EC /* HelveticaNeue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelveticaNeue.swift; sourceTree = "<group>"; };
@@ -203,8 +199,6 @@
 			isa = PBXGroup;
 			children = (
 				4295B722222EFA100079E4EC /* RecipeDetail */,
-				4295B728222F11040079E4EC /* Placeholder.storyboard */,
-				4295B72A222F11110079E4EC /* PlaceholderViewController.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -353,7 +347,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4295B71E222EF8460079E4EC /* RecipeDetail.storyboard in Resources */,
-				4295B729222F11040079E4EC /* Placeholder.storyboard in Resources */,
 				4228B729222D98D60091E31E /* LaunchScreen.storyboard in Resources */,
 				4228B726222D98D60091E31E /* Assets.xcassets in Resources */,
 				4228B724222D98D50091E31E /* Main.storyboard in Resources */,
@@ -483,7 +476,6 @@
 				4295B725222EFAEA0079E4EC /* UIViewController+Storyboards.swift in Sources */,
 				4295B727222EFDA50079E4EC /* UIStoryboard.swift in Sources */,
 				4228B757222DA5F90091E31E /* APIClient.swift in Sources */,
-				4295B72B222F11110079E4EC /* PlaceholderViewController.swift in Sources */,
 				4228B74F222D9F5D0091E31E /* Recipe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
