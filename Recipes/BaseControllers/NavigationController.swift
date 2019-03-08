@@ -17,7 +17,7 @@ class NavigationController: UINavigationController {
     func enableAppearance() {
         navigationBar.tintColor = .white
         navigationBar.barTintColor = UIColor.red
-        navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white, .font: UIFont.systemFont(ofSize: 17)]
+        navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white, .font: HelveticaNeue.regular(size: 17)]
     }
     
 }

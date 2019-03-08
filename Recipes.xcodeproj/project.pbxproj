@@ -149,19 +149,15 @@
 		4228B71D222D98D50091E31E /* Recipes */ = {
 			isa = PBXGroup;
 			children = (
+				4228B725222D98D60091E31E /* Assets.xcassets */,
+				4295B7362232B9310079E4EC /* Services */,
+				4295B7342232B8AF0079E4EC /* BaseControllers */,
 				4295B73022305E3C0079E4EC /* Theme */,
 				4228B71E222D98D50091E31E /* AppDelegate.swift */,
 				4295B721222EF9F60079E4EC /* Screens */,
 				4228B758222EE1940091E31E /* Extensions */,
 				4295B723222EFA410079E4EC /* Models */,
-				4228B720222D98D50091E31E /* MainViewController.swift */,
-				4228B722222D98D50091E31E /* Main.storyboard */,
-				4228B725222D98D60091E31E /* Assets.xcassets */,
-				4228B727222D98D60091E31E /* LaunchScreen.storyboard */,
 				4228B72A222D98D60091E31E /* Info.plist */,
-				4228B74C222D9D670091E31E /* TableViewCell.swift */,
-				4228B756222DA5F90091E31E /* APIClient.swift */,
-				4295B72C222F17BB0079E4EC /* NavigationController.swift */,
 			);
 			path = Recipes;
 			sourceTree = "<group>";
@@ -198,6 +194,8 @@
 		4295B721222EF9F60079E4EC /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				4228B727222D98D60091E31E /* LaunchScreen.storyboard */,
+				4295B7332232B86B0079E4EC /* LatestRecipes */,
 				4295B722222EFA100079E4EC /* RecipeDetail */,
 			);
 			path = Screens;
@@ -206,6 +204,7 @@
 		4295B722222EFA100079E4EC /* RecipeDetail */ = {
 			isa = PBXGroup;
 			children = (
+				4295B7352232B91A0079E4EC /* TableViewCells */,
 				4295B71D222EF8460079E4EC /* RecipeDetail.storyboard */,
 				4295B71F222EF9710079E4EC /* RecipeDetailViewController.swift */,
 			);
@@ -226,6 +225,39 @@
 				4295B73122305E560079E4EC /* HelveticaNeue.swift */,
 			);
 			path = Theme;
+			sourceTree = "<group>";
+		};
+		4295B7332232B86B0079E4EC /* LatestRecipes */ = {
+			isa = PBXGroup;
+			children = (
+				4228B720222D98D50091E31E /* MainViewController.swift */,
+				4228B722222D98D50091E31E /* Main.storyboard */,
+			);
+			path = LatestRecipes;
+			sourceTree = "<group>";
+		};
+		4295B7342232B8AF0079E4EC /* BaseControllers */ = {
+			isa = PBXGroup;
+			children = (
+				4295B72C222F17BB0079E4EC /* NavigationController.swift */,
+			);
+			path = BaseControllers;
+			sourceTree = "<group>";
+		};
+		4295B7352232B91A0079E4EC /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				4228B74C222D9D670091E31E /* TableViewCell.swift */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		4295B7362232B9310079E4EC /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				4228B756222DA5F90091E31E /* APIClient.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		ED2A0B108B3BA42E3FBD68B4 /* Frameworks */ = {
