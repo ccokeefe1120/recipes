@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2Km-5c-ySd">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Recipe Detail View Controller-->
+        <scene sceneID="Coc-Fq-dji">
+            <objects>
+                <viewController id="2Km-5c-ySd" customClass="RecipeDetailViewController" customModule="Recipes" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="B2y-En-QFQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ko-q6-Stw">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ujY-yB-toD">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="6049.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="C7m-sa-gVN">
+                                                <rect key="frame" x="10" y="10" width="355" height="6029.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Salmon Recipe" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rg1-CK-SJR" userLabel="Salmon Recipe Label">
+                                                        <rect key="frame" x="0.0" y="0.0" width="355" height="24"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="20"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Cj-P6-ZyY" userLabel="Image Ingredients View">
+                                                        <rect key="frame" x="0.0" y="34" width="355" height="220"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="6xL-2D-nh0">
+                                                                <rect key="frame" x="15" y="10" width="325" height="200"/>
+                                                                <subviews>
+                                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vIx-Py-g3x">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="157.5" height="200"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="200" id="6is-Kd-FhJ"/>
+                                                                        </constraints>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                                <real key="value" value="8"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                    </imageView>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="8nJ-YQ-klk">
+                                                                        <rect key="frame" x="167.5" y="0.0" width="157.5" height="200"/>
+                                                                    </stackView>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="bottom" secondItem="6xL-2D-nh0" secondAttribute="bottom" constant="10" id="2nY-LK-fmF"/>
+                                                            <constraint firstItem="6xL-2D-nh0" firstAttribute="top" secondItem="8Cj-P6-ZyY" secondAttribute="top" constant="10" id="Ig4-tR-Kd5"/>
+                                                            <constraint firstAttribute="trailing" secondItem="6xL-2D-nh0" secondAttribute="trailing" constant="15" id="jpA-py-moj"/>
+                                                            <constraint firstItem="6xL-2D-nh0" firstAttribute="leading" secondItem="8Cj-P6-ZyY" secondAttribute="leading" constant="15" id="tJi-P3-307"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="8"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1hp-w5-kaQ" userLabel="TagsView">
+                                                        <rect key="frame" x="0.0" y="264" width="355" height="55"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rK8-Qn-Jgl">
+                                                                <rect key="frame" x="15" y="15" width="325" height="25"/>
+                                                                <subviews>
+                                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tag" translatesAutoresizingMaskIntoConstraints="NO" id="GMe-ls-9HM">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="25" height="25"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" constant="25" id="Tly-0I-N0b"/>
+                                                                            <constraint firstAttribute="height" constant="25" id="WaU-wv-MqC"/>
+                                                                        </constraints>
+                                                                    </imageView>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l2F-ym-RLN" userLabel="Tags">
+                                                                        <rect key="frame" x="25" y="0.0" width="300" height="25"/>
+                                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstItem="rK8-Qn-Jgl" firstAttribute="leading" secondItem="1hp-w5-kaQ" secondAttribute="leading" constant="15" id="3Vu-6a-wXM"/>
+                                                            <constraint firstAttribute="trailing" secondItem="rK8-Qn-Jgl" secondAttribute="trailing" constant="15" id="DJZ-5T-CJv"/>
+                                                            <constraint firstItem="rK8-Qn-Jgl" firstAttribute="top" secondItem="1hp-w5-kaQ" secondAttribute="top" constant="15" id="Q31-cA-SbK"/>
+                                                            <constraint firstAttribute="bottom" secondItem="rK8-Qn-Jgl" secondAttribute="bottom" constant="15" id="cVg-da-Pa8"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="8"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CmA-ba-bTX" userLabel="InstructionsView">
+                                                        <rect key="frame" x="0.0" y="329" width="355" height="5700.5"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="8gR-pa-euV">
+                                                                <rect key="frame" x="15" y="15" width="325" height="5670.5"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Instructions" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PyB-GA-Oc0" userLabel="InstructionsTitleLabel">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="325" height="20.5"/>
+                                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sf7-cQ-MWf">
+                                                                        <rect key="frame" x="0.0" y="30.5" width="325" height="5640"/>
+                                                                        <mutableString key="text">Lorem ipsum dolor sit amet, pertinax deseruisse voluptatum et vim. Ignota deterruisset ne eam, et euismod liberavisse cum, sensibus consetetur voluptatibus eam an. Eu dicat virtute pertinax nec, labores veritus dignissim pro ad. Veritus delicata ea vim, eam electram petentium at. Eum delenit accumsan neglegentur ea, eripuit appareat at vim, facilis consequuntur comprehensam at vix.
+
+Cibo posse conceptam est id, ea oratio electram facilisis duo. Te quo fugit concludaturque, altera malorum accusam an sed. Ut sed minim inermis temporibus, prompta aliquid et mei. Laudem imperdiet philosophia ut eam, labore volumus concludaturque an sed, sed id virtute singulis.
+
+Ius deserunt appellantur at. Eu eros munere sit. Illum mentitum pro cu, magna voluptaria eu nam. Suscipiantur definitiones eum cu, mel ea verear instructior.
+
+Duo eu natum zril mollis, ei dicta semper luptatum pro, graece percipit recusabo te nec. Vis zril eirmod alienum ne, has ei maiorum corpora posidonium. Sit prompta appareat placerat et, has nonumes maiorum et, eam an iracundia splendide. Eum stet nominavi te, sea ne veri inimicus vituperatoribus.
+
+Enim voluptua eam no, congue accommodare vix ea. Choro fabellas mel id. Doming quaeque eos ei, civibus sententiae signiferumque eu nec, ad sed putant theophrastus. Ut eum corrumpit urbanitas deterruisset, cu scripta temporibus interpretaris vix.</mutableString>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="8gR-pa-euV" secondAttribute="trailing" constant="15" id="5Eu-aJ-QrJ"/>
+                                                            <constraint firstAttribute="bottom" secondItem="8gR-pa-euV" secondAttribute="bottom" constant="15" id="TbW-wh-5T8"/>
+                                                            <constraint firstItem="8gR-pa-euV" firstAttribute="leading" secondItem="CmA-ba-bTX" secondAttribute="leading" constant="15" id="XAA-qv-wtu"/>
+                                                            <constraint firstItem="8gR-pa-euV" firstAttribute="top" secondItem="CmA-ba-bTX" secondAttribute="top" constant="15" id="fAf-fT-ygm"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="8"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.87125275639999999" green="0.88805238310000001" blue="0.93845126300000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="C7m-sa-gVN" secondAttribute="trailing" constant="10" id="60L-rR-1OU"/>
+                                            <constraint firstAttribute="bottom" secondItem="C7m-sa-gVN" secondAttribute="bottom" constant="10" id="EN2-0F-DBp"/>
+                                            <constraint firstItem="C7m-sa-gVN" firstAttribute="top" secondItem="ujY-yB-toD" secondAttribute="top" constant="10" id="Mcn-ga-FWf"/>
+                                            <constraint firstItem="C7m-sa-gVN" firstAttribute="leading" secondItem="ujY-yB-toD" secondAttribute="leading" constant="10" id="p16-Jk-3oM"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="ujY-yB-toD" firstAttribute="top" secondItem="4ko-q6-Stw" secondAttribute="top" id="2Le-bu-Rg0"/>
+                                    <constraint firstAttribute="trailing" secondItem="ujY-yB-toD" secondAttribute="trailing" id="5Nk-bh-fPT"/>
+                                    <constraint firstAttribute="bottom" secondItem="ujY-yB-toD" secondAttribute="bottom" id="M3A-Gh-yVb"/>
+                                    <constraint firstItem="ujY-yB-toD" firstAttribute="width" secondItem="4ko-q6-Stw" secondAttribute="width" id="RYA-Jm-MTE"/>
+                                    <constraint firstItem="ujY-yB-toD" firstAttribute="leading" secondItem="4ko-q6-Stw" secondAttribute="leading" id="zyB-X2-czE"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.87125275643717492" green="0.88805238306622314" blue="0.93845126295336789" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="JMj-KT-Ihz" firstAttribute="bottom" secondItem="4ko-q6-Stw" secondAttribute="bottom" id="06c-Uc-ctI"/>
+                            <constraint firstItem="4ko-q6-Stw" firstAttribute="leading" secondItem="JMj-KT-Ihz" secondAttribute="leading" id="BXs-nI-662"/>
+                            <constraint firstItem="JMj-KT-Ihz" firstAttribute="trailing" secondItem="4ko-q6-Stw" secondAttribute="trailing" id="LPF-F5-QGN"/>
+                            <constraint firstItem="4ko-q6-Stw" firstAttribute="top" secondItem="JMj-KT-Ihz" secondAttribute="top" id="vNU-ry-Y8U"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="JMj-KT-Ihz"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="vIx-Py-g3x" id="PPX-18-lDp"/>
+                        <outlet property="ingredientsStackView" destination="8nJ-YQ-klk" id="pZs-Fc-i9r"/>
+                        <outlet property="instructionsLabel" destination="Sf7-cQ-MWf" id="IKD-4w-3ct"/>
+                        <outlet property="tagIconImageView" destination="GMe-ls-9HM" id="js7-as-Dsn"/>
+                        <outlet property="tagsLabel" destination="l2F-ym-RLN" id="8pH-4C-bgs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="udV-qE-MEE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-162.40000000000001" y="-316.19190404797604"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="tag" width="200" height="200"/>
+    </resources>
+</document>
