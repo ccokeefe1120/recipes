@@ -10,11 +10,12 @@ import UIKit
 
 class RecipeDetailViewController: UIViewController {
     
+    @IBOutlet private weak var recipeTitleLabel: UILabel!
     @IBOutlet private weak var imageView: UIImageView!
-    @IBOutlet private weak var tagIconImageView: UIImageView!
-    @IBOutlet private weak var instructionsLabel: UILabel!
-    @IBOutlet private weak var tagsLabel: UILabel!
     @IBOutlet private weak var ingredientsStackView: UIStackView!
+    @IBOutlet private weak var tagIconImageView: UIImageView!
+    @IBOutlet private weak var tagsLabel: UILabel!
+    @IBOutlet private weak var instructionsLabel: UILabel!
     
     var recipe: Recipe? {
         didSet {
@@ -43,6 +44,7 @@ class RecipeDetailViewController: UIViewController {
         
         addIngredients(recipe: recipe)
         tagsLabel.text = recipe.tags
+        recipeTitleLabel.text = recipe.name
         
         instructionsLabel.text = recipe.instructions
     }

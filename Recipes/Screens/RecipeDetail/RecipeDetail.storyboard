@@ -186,6 +186,7 @@ Enim voluptua eam no, congue accommodare vix ea. Choro fabellas mel id. Doming q
                         <outlet property="imageView" destination="vIx-Py-g3x" id="PPX-18-lDp"/>
                         <outlet property="ingredientsStackView" destination="8nJ-YQ-klk" id="pZs-Fc-i9r"/>
                         <outlet property="instructionsLabel" destination="Sf7-cQ-MWf" id="IKD-4w-3ct"/>
+                        <outlet property="recipeTitleLabel" destination="Rg1-CK-SJR" id="deL-eh-j38"/>
                         <outlet property="tagIconImageView" destination="GMe-ls-9HM" id="js7-as-Dsn"/>
                         <outlet property="tagsLabel" destination="l2F-ym-RLN" id="8pH-4C-bgs"/>
                     </connections>
